@@ -51,11 +51,11 @@ inquirer
   .then((data) => {
     console.log(data);
 
-    const filename = `./README.md`;
+    const filename = `../README.md`;
 
-    let output = `# Project Title\n ${data.title}\n # Description\n ${data.description}\n # Installation Instructions\n ${data.installation}
-        \n # Usage Information\n ${data.usage}\n # Contribution Guidelines \n ${data.contribution} \n # Testing Instructions \n ${data.testing}
-        \n # Github Username\n ${data.username}\n # Email\n ${data.email}
+    let output = `# Project Title\n ${data.title}\n\n # Description\n ${data.description}\n\n # Installation Instructions\n ${data.installation}
+        \n\n # Usage Information\n ${data.usage}\n\n # Contribution Guidelines \n\n ${data.contribution} \n\n # Testing Instructions \n ${data.testing}
+        \n\n # Github Username\n ${data.username}\n\n # Email\n ${data.email}\n\n
     `;
 
     fs.writeFile(filename, output, (err) =>
